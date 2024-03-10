@@ -1,12 +1,42 @@
 <main>
-  <p-toolbar [style]="{position: 'sticky', top: '0'}">
+  <p-toolbar [style]="{position: 'sticky', zIndex : '10', top: '0', left: '0', right: '0'}">
     <div class="p-toolbar-group-start">
-      <h2>Archana Berry</h2>
+      <p-image class="mr-3" src="assets/logo.svg" width="auto" height="64px"></p-image>
+      <h2>Archana Berry-chan</h2>
+    </div>
+    <div class="p-toolbar-group-center">
+
+    </div>
+    <div class="p-toolbar-group-end gap-3">
+      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}">Home</p-button>
+      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}">Our Works</p-button>
     </div>
   </p-toolbar>
-  <div class="h-screen" [style]="{backgroundColor: 'whitesmoke'}">
-    <div class="flex flex-column justify-content-center align-items-center h-full">
-      <h2>Selamat Datang</h2>
+  <div id="intro" class="" [style]="{ backgroundColor: 'whitesmoke', color: 'white'}">
+    <div class="flex flex-column justify-content-end h-screen gap-4 w-8">
+      <div class="p-4">
+        <h1>Hello, everyone</h1>
+        <p>PT Archana Berry is Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa
+          sint ad nisi Lorem
+          pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
+          nostrud
+          ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+          officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris
+          cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+          eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat
+          ullamco ut ea consectetur et est culpa et culpa duis.</p>
+      </div>
     </div>
   </div>
+  <div class="flex flex-column h-screen">
+    <div class="p-4">
+      <h1>Halaman Kedua</h1>
+    </div>
+  </div>
+  <div class="flex flex-column h-screen">
+    <div class="p-4">
+      <h1>Halaman Kedua</h1>
+    </div>
+  </div>
+
 </main>
