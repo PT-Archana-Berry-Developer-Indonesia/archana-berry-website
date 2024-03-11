@@ -2,18 +2,17 @@ import { CommonModule } from '@angular/common';
 import { AfterViewInit, Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { ToolbarModule } from 'primeng/toolbar'
-import { ImageModule } from 'primeng/image'
-import { ButtonModule } from "primeng/button";
-import { TabViewModule } from 'primeng/tabview'
-import { TechnologyComponent } from './technology/technology.component';
-import { InformationComponent } from './information/information.component';
+import { OfferComponent } from './offer/offer.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { IntroductionComponent } from './introduction/introduction.component';
+import { CarouselComponent } from './carousel/carousel.component';
 
 declare var VANTA: any;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [InformationComponent, TechnologyComponent, RouterOutlet, ButtonModule, CommonModule, ImageModule, ToolbarModule, TabViewModule],
+  imports: [RouterOutlet, CarouselComponent, CommonModule, ToolbarModule, OfferComponent, NavbarComponent, IntroductionComponent],
   templateUrl: './app.component.html',
   styleUrl: "./app.component.scss"
 })
