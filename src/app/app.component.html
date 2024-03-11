@@ -8,8 +8,10 @@
 
     </div>
     <div class="p-toolbar-group-end gap-3">
-      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}">Home</p-button>
-      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}">Our Works</p-button>
+      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}" label='Home'></p-button>
+      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}" label='Our Works'></p-button>
+      <p-button icon='pi pi-discord' [outlined]='true' [rounded]="false" [style]="{color: 'black'}"
+        label='Discord'></p-button>
     </div>
   </p-toolbar>
   <div id="intro" class="" [style]="{ backgroundColor: 'whitesmoke', color: 'white'}">
@@ -28,14 +30,60 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-column h-screen">
-    <div class="p-4">
-      <h1>Halaman Kedua</h1>
+
+  <div class="p-4 grid">
+    <div class="col-8">
+      <div class="flex flex-column justify-content-around h-screen">
+        <div class="w-4">
+          <h2>Who are we?</h2>
+          <div class="parallelogram"></div>
+          <h3>We don'nt know who we are because Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+            cillum
+            sint consectetur cupidatat.</h3>
+        </div>
+
+        <div class="align-self-end w-4 text-right">
+          <h2>Want we do?</h2>
+          <div class="parallelogram"></div>
+          <h3>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+          </h3>
+
+        </div>
+
+        <div class="w-4">
+          <h2>Want to know more?</h2>
+          <div class="parallelogram"></div>
+          <h3>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+          </h3>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="col">
+      <h2>Latest News</h2>
+      <p-tabView [style]="{backgroundColor: 'red'}">
+        <p-tabPanel *ngFor="let item of items" [header]="item.name">
+          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+        </p-tabPanel>
+
+      </p-tabView>
     </div>
   </div>
-  <div class="flex flex-column h-screen">
-    <div class="p-4">
-      <h1>Halaman Kedua</h1>
+
+  <div class="p-4 flex flex-column h-screen">
+    <div class="">
+      <h2>Our Works</h2>
+      <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem
+        pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud
+        nostrud
+        ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut
+        officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis
+        laboris
+        cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia
+        eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint
+        cupidatat
+        ullamco ut ea consectetur et est culpa et culpa duis.</p>
     </div>
   </div>
 
