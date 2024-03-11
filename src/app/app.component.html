@@ -8,10 +8,9 @@
 
     </div>
     <div class="p-toolbar-group-end gap-3">
-      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}" label='Home'></p-button>
-      <p-button [outlined]='true' [rounded]="false" [style]="{color: 'black'}" label='Our Works'></p-button>
-      <p-button icon='pi pi-discord' [outlined]='true' [rounded]="false" [style]="{color: 'black'}"
-        label='Discord'></p-button>
+      <p-button [outlined]='true' [rounded]="false" label='Home'></p-button>
+      <p-button [outlined]='true' [rounded]="false" label='Our Works'></p-button>
+      <p-button icon='pi pi-discord' [outlined]='true' [rounded]="false" label='Discord'></p-button>
     </div>
   </p-toolbar>
   <div id="intro" class="" [style]="{ backgroundColor: 'whitesmoke', color: 'white'}">
@@ -32,25 +31,22 @@
   </div>
 
   <div class="p-4 grid">
-    <div class="col-8">
+    <div class="md:col-8">
       <div class="flex flex-column justify-content-around h-screen">
-        <div class="w-4">
+        <div class="md:w-8">
           <h2>Who are we?</h2>
           <div class="parallelogram"></div>
-          <h3>We don'nt know who we are because Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
+          <h3>We don't know who we are because Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint
             cillum
             sint consectetur cupidatat.</h3>
         </div>
-
-        <div class="align-self-end w-4 text-right">
-          <h2>Want we do?</h2>
+        <div class="md:w-8">
+          <h2>What we do?</h2>
           <div class="parallelogram"></div>
           <h3>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
           </h3>
-
         </div>
-
-        <div class="w-4">
+        <div class="md:w-8">
           <h2>Want to know more?</h2>
           <div class="parallelogram"></div>
           <h3>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
@@ -62,11 +58,13 @@
 
     <div class="col">
       <h2>Latest News</h2>
-      <p-tabView [style]="{backgroundColor: 'red'}">
-        <p-tabPanel *ngFor="let item of items" [header]="item.name">
-          Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
+      <p-tabView [style]="{borderColor: 'black'}">
+        <p-tabPanel header='Information' [style]="{borderColor: 'black' }">
+          <app-information></app-information>
         </p-tabPanel>
-
+        <p-tabPanel header='Technology'>
+          <app-technology></app-technology>
+        </p-tabPanel>
       </p-tabView>
     </div>
   </div>
